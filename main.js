@@ -1,9 +1,11 @@
 var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
 
 
-d.beginPath();
-d.strokeStyle = "black";
-d.moveTo(89,140);
-d.lineTo(160,160);
-d.stroke();
-d.closePath();
+function dibujarLinea (color, xi, yi, xf, yf) {
+    d.beginPath();
+    d.strokeStyle = color;
+    d.moveTo(xi,yi);
+    d.lineTo(xf,yf);
+    d.stroke();
+    d.closePath();
+}
