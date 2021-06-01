@@ -4,6 +4,7 @@ var l = 0;
 
 while (l<lineas) {
     dibujarLinea("blue", 0, 25, 10, 300);
+    console.log( "lineas " + l);
     l = l + 1;
 }
 
