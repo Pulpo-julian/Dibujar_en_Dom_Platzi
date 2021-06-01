@@ -1,8 +1,11 @@
 var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
+var lineas = 30;
+var l = 0;
 
-dibujarLinea("blue", 0, 0, 10, 300);
-dibujarLinea("blue", 0, 10, 10, 300);
-dibujarLinea("blue", 0, 25, 10, 300);
+while (l<lineas) {
+    dibujarLinea("blue", 0, 25, 10, 300);
+    l = l + 1;
+}
 
 function dibujarLinea (color, xi, yi, xf, yf) {
     d.beginPath();
