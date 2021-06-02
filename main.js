@@ -1,9 +1,12 @@
 var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
 var lineas = 30;
 var l = 0;
+var yi, xf;
 
 while (l<lineas) {
-    dibujarLinea("blue", 0, 25, 10, 300);
+    yi = 10 * l;
+    xf = 10 * (l +1);
+    dibujarLinea("blue", 0, yi, xf, 300);
     console.log( "lineas " + l);
     l = l + 1;
 }
