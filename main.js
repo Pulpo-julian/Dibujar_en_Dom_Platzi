@@ -1,6 +1,4 @@
-document.addEventListener("keydown", () => {
-    dibujarTeclas()
-}); 
+document.addEventListener("keyup", dibujarTeclas);
 
 var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
 
@@ -14,7 +12,19 @@ function dibujarLinea (color, xi, yi, xf, yf) {
     d.closePath();
 }
 
-dibujarLinea(colorcito, 0, 0, 0, 300)
-dibujarLinea(colorcito, 300, 0, 0, 0)
-dibujarLinea(colorcito, 300, 0, 300, 300)
-dibujarLinea(colorcito, 0, 300, 300, 300)
+var teclas = {
+    UP: 38,
+    DOWN: 40,
+    LEFT: 37,
+    RIGTH: 39
+};
+
+function dibujarTeclas (evento) {
+    console.log(evento.keyCode);
+}
+
+
+// dibujarLinea(colorcito, 0, 0, 0, 300)
+// dibujarLinea(colorcito, 300, 0, 0, 0)
+// dibujarLinea(colorcito, 300, 0, 300, 300)
+// dibujarLinea(colorcito, 0, 300, 300, 300)
