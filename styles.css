@@ -41,8 +41,17 @@ body {
     padding: 25px;
 }
 
-.main-section h1 {
+.main-section .dibujo h1 {
     font-size: 52px;
+}
+
+.main-section .explicacion h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main-section .explicacion hgroup {
+    margin-left: 30px;
 }
 
 .container .pie {
