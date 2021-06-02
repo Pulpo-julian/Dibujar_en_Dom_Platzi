@@ -1,6 +1,3 @@
-var iTexto = document.getElementsByClassName("entrada")[0];
-var iBoton = document.getElementsByClassName("entrada")[1];
-
 iBoton.addEventListener("click", () => {
     dibujarPorClick();
 });
@@ -9,24 +6,24 @@ var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
 
 
 
-function dibujarPorClick() {
-    var lineas = parseInt(iTexto.value);
-    var yi, xf;
-    var colorcito = "red";
-    var recorrido = d.canvas.width / lineas;
-    
 
-    for (l = 0; l < lineas; l++) {
-        yi = recorrido * l;
-        xf = recorrido * (l + 1);
-        dibujarLinea(colorcito, 0, yi, xf, 300);
-    }
+var lineas = parseInt(iTexto.value);
+var yi, xf;
+var colorcito = "red";
+var recorrido = d.canvas.width / lineas;
 
-    dibujarLinea(colorcito, 0, 0, 0, 300)
-    dibujarLinea(colorcito, 300, 0, 0, 0)
-    dibujarLinea(colorcito, 300, 0, 300, 300)
-    dibujarLinea(colorcito, 0, 300, 300, 300)
+
+for (l = 0; l < lineas; l++) {
+    yi = recorrido * l;
+    xf = recorrido * (l + 1);
+    dibujarLinea(colorcito, 0, yi, xf, 300);
 }
+
+dibujarLinea(colorcito, 0, 0, 0, 300)
+dibujarLinea(colorcito, 300, 0, 0, 0)
+dibujarLinea(colorcito, 300, 0, 300, 300)
+dibujarLinea(colorcito, 0, 300, 300, 300)
+
 
 
 
