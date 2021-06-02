@@ -38,6 +38,15 @@ body {
     background: #fff ;
     padding: 25px;
 }
+.form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form p label {
+    font-size: 35px;
+}
 
 .main-section h1 {
     font-size: 52px;

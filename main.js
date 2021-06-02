@@ -1,3 +1,8 @@
+var iTexto = document.getElementsByClassName("entrada")[0];
+var iBoton = document.getElementsByClassName("entrada")[1];
+
+
+
 var d = document.getElementsByClassName("lienzo")[0].getContext("2d");
 var lineas = 30;
 var l = 0;
